@@ -1,5 +1,6 @@
 package controller.parsers;
 
+import model.Predictor;
 import model.PredictorData;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Sheet;

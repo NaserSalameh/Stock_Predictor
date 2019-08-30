@@ -17,7 +17,7 @@ public class FrontGUI extends JFrame {
         setSize(500,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        parserWriterGUI = new ParserWriterGUI(data);
+        parserWriterGUI = new ParserWriterGUI(this, data);
         stockPriceGUI = new StockPriceGUI(data);
 
         tabbedPane = new JTabbedPane();

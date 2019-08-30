@@ -17,12 +17,8 @@ public class ParserWriterController {
         writer = new Writer();
     }
 
-    public void parse(PredictorData data){
-        parser.parse(data);
-    }
+    public void parse(PredictorData data){ parser.parse(data);}
 
-    public void write(PredictorData data){
-        writer.write(data);
-    }
+    public void write(PredictorData data){ writer.write(data);}
 
 }

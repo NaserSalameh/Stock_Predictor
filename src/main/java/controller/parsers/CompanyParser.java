@@ -30,6 +30,7 @@ public class CompanyParser {
             newCompany.setPrice(companyData[9]);
 
             data.getCompanies().add(newCompany);
+            companyData = new String[10];
         }
     }
 }

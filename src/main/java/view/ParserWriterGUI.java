@@ -1,6 +1,7 @@
 package view;
 
 import controller.ParserWriterController;
+import model.Predictor;
 import model.PredictorData;
 
 import javax.swing.*;
@@ -13,7 +14,7 @@ public class ParserWriterGUI extends JPanel{
     private JPanel rootPanel;
     private JTextPane textPane1;
 
-    public ParserWriterGUI(final PredictorData data){
+    public ParserWriterGUI(final JFrame parent, final PredictorData data){
 
         add(rootPanel);
 
@@ -21,8 +22,10 @@ public class ParserWriterGUI extends JPanel{
 
         parserButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
                 parserWriterController.parse(data);
-                textPane1.setText("Parsed Data.");
+                Predictor newPredictor = new Predictor(data);
+                parent.dispose();;
             }
         });
 

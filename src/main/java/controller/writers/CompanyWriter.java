@@ -17,7 +17,7 @@ public class CompanyWriter {
 
     public void write(PredictorData data){
 
-        int rownum =1;
+        int rownum =0;
         for(Company c: data.getCompanies()){
             Row row = sheet.createRow(rownum++);
 
